@@ -26,7 +26,65 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
+  
   {
+    name: "Gestiones",
+    icon: <ListIcon />,
+    subItems: [
+      { name: "Gestion de rotativas", path: "/blankss", pro: false },
+      { name: "Calendario de tripulacion", path: "/blankss", pro: false },
+    ],
+  },
+  {
+    icon: <UserCircleIcon />,
+    name: "Administracion",
+    subItems: [
+      { name: "Gestion de usuarios", path: "/blankss", pro: false },
+      { name: "Gestion de tripulacion", path: "/blankss", pro: false },
+      { name: "Gestion de grupos de rutas", path: "/blankss", pro: false },
+      { name: "Visualizador de registros", path: "/blankss", pro: false },
+    ],
+  },
+  {
+    icon: <ListIcon />,
+    name: "Parametrizacion",
+    subItems: [
+      { name: "Configuraciones del sistema", path: "/blankss", pro: false },
+      { name: "Tipos de eventos", path: "/blankss", pro: false },
+      { name: "Gestion de parametros", path: "/blankss", pro: false },
+    ],
+  },
+  {
+    icon: <PlugInIcon />,
+    name: "Super-Admin",
+    subItems: [
+      { name: "Gestion de empresas", path: "/blankss", pro: false },
+      { name: "Gestion de modulos por empresa", path: "/blankss", pro: false },
+      { name: "Gestion de permisos", path: "/blankss", pro: false },
+      { name: "Gestion de roles", path: "/blankss", pro: false },
+      { name: "Gestion de modulos del sistema", path: "/blankss", pro: false },
+      { name: "Gestion de permisos", path: "/blankss", pro: false },
+    ],
+  },
+  {
+    icon: <UserCircleIcon />,
+    name: "Asistencia RRHH",
+    subItems: [
+      { name: "Gestion de turnos", path: "/blankss", pro: false },
+      { name: "Gestion de trabajadores", path: "/blankss", pro: false },
+      { name: "Notificacion de eventos", path: "/blankss", pro: false },
+      { name: "Gestion de conductores", path: "/blankss", pro: false },
+    ],
+  },
+  {
+    icon: <PieChartIcon />,
+    name: "Reportes",
+    subItems: [
+      { name: "Reporte dias trabajados", path: "/blankss", pro: false },
+    ],
+  },
+  
+  /* {
     icon: <GridIcon />,
     name: "Dashboard",
     subItems: [{ name: "Ecommerce", path: "/", pro: false }],
@@ -36,16 +94,8 @@ const navItems: NavItem[] = [
     name: "Calendar",
     path: "/calendar",
   },
-  {
-    icon: <UserCircleIcon />,
-    name: "User Profile",
-    path: "/profile",
-  },
-  {
-    name: "Forms",
-    icon: <ListIcon />,
-    subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],
-  },
+
+
   {
     name: "Tables",
     icon: <TableIcon />,
@@ -58,38 +108,27 @@ const navItems: NavItem[] = [
       { name: "Blank Page", path: "/blank", pro: false },
       { name: "404 Error", path: "/error-404", pro: false },
     ],
-  },
+  }, */
 ];
 
 const othersItems: NavItem[] = [
-  {
+/*   {
     icon: <PieChartIcon />,
     name: "Charts",
     subItems: [
       { name: "Line Chart", path: "/line-chart", pro: false },
       { name: "Bar Chart", path: "/bar-chart", pro: false },
     ],
-  },
+  }, */
   {
     icon: <BoxCubeIcon />,
-    name: "UI Elements",
+    name: "Ventas",
     subItems: [
       { name: "Alerts", path: "/alerts", pro: false },
       { name: "Avatar", path: "/avatars", pro: false },
-      { name: "Badge", path: "/badge", pro: false },
-      { name: "Buttons", path: "/buttons", pro: false },
-      { name: "Images", path: "/images", pro: false },
-      { name: "Videos", path: "/videos", pro: false },
     ],
   },
-  {
-    icon: <PlugInIcon />,
-    name: "Authentication",
-    subItems: [
-      { name: "Sign In", path: "/signin", pro: false },
-      { name: "Sign Up", path: "/signup", pro: false },
-    ],
-  },
+
 ];
 
 const AppSidebar: React.FC = () => {
@@ -343,7 +382,7 @@ const AppSidebar: React.FC = () => {
                 }`}
               >
                 {isExpanded || isHovered || isMobileOpen ? (
-                  "Menu"
+                  "Rotativas"
                 ) : (
                   <HorizontaLDots className="size-6" />
                 )}
@@ -359,7 +398,7 @@ const AppSidebar: React.FC = () => {
                 }`}
               >
                 {isExpanded || isHovered || isMobileOpen ? (
-                  "Others"
+                  "VENTAS"
                 ) : (
                   <HorizontaLDots />
                 )}
