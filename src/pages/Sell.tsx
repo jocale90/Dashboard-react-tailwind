@@ -1,5 +1,6 @@
 import PageBreadcrumb from "../components/common/PageBreadCrumb";
 import PageMeta from "../components/common/PageMeta";
+import OptionPanel from "../components/OptionPanel";
 import CustomTable from "../components/tables/CustomTable";
 
 const sampleData = [
@@ -32,13 +33,13 @@ const sampleData = [
 export default function NewPage() {
   return (
     <>
-      <PageMeta title="Nueva Página" description="Página de ejemplo con nueva estructura." />
-      <PageBreadcrumb pageTitle="Nueva Página" />
-      
-      <div className="p-6 bg-white shadow rounded-lg">
-        {/* Reutilizando CustomTable */}
-        <CustomTable data={sampleData} />
-      </div>
+      <PageMeta title="Modulo de ventas" description="Página de ejemplo con nueva estructura." />
+      <PageBreadcrumb pageTitle="Ventas" />
+      <OptionPanel />
+        <div className="mt-6 p-6 bg-white shadow rounded-lg">
+          <CustomTable data={sampleData} />
+        </div>
+
     </>
   );
 }
