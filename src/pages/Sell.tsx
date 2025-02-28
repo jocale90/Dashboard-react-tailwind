@@ -3,8 +3,30 @@ import PageMeta from "../components/common/PageMeta";
 import CustomTable from "../components/tables/CustomTable";
 
 const sampleData = [
-  { ID: 1, Nombre: "Producto A", Precio: "$10" },
-  { ID: 2, Nombre: "Producto B", Precio: "$15" },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 1, hora: "20:50", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
+  { Servicio: 2, hora: "21:00", dia: "Viernes", anden: "", origen: "Valdivia", destino: "Santiago", llegada: "08:30", Tipobus: "taxibus", operador: "Transantin", },
 ];
 
 export default function NewPage() {
@@ -14,9 +36,6 @@ export default function NewPage() {
       <PageBreadcrumb pageTitle="Nueva Página" />
       
       <div className="p-6 bg-white shadow rounded-lg">
-        <h2 className="text-2xl font-bold">Mi Nueva Página</h2>
-        <p className="text-gray-500">Aquí puedes agregar contenido personalizado.</p>
-        
         {/* Reutilizando CustomTable */}
         <CustomTable data={sampleData} />
       </div>
